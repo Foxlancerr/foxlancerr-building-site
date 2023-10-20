@@ -104,6 +104,9 @@ section .hero h1 span{
     font-size: 1.5rem;
     position: relative;
 }
+.image-hero p{
+    margin-bottom:25px;
+}
 .image-hero h3::after{
     content: "";
     position: absolute;
@@ -121,17 +124,15 @@ section .hero h1 span{
 .image-box{
     cursor: pointer;
     position: relative;
-    background-color: yellow;
+    /* background-color: yellow; */
     overflow: hidden;
-    height: 100%;
     transition: .3s ease-in;
 }
 .image-box:hover img{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 .image-box img{
     width: 100%;
-    height: 100%;
 }
 .image-box p{
     position: absolute;
@@ -143,6 +144,66 @@ section .hero h1 span{
     background-color: black;
     color: white;
 }
+
+/* user section */
+.user-hero{
+    width: 100%;
+    /* background-color: red; */
+}
+.user-hero h3{
+    display: inline-block;
+    margin: 50px 0px;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.user-hero h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 4;
+    width: 30px;
+    height: 3px;
+    background-color: blue;
+}
+.user-hero p{
+    margin-bottom: 50px;
+}
+
+.user-hero .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.user-hero .child img{
+    width: 100%;
+}
+.user-hero .child .contents h1{
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin: 10px 0px;
+}
+.user-hero .child .contents h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.user-hero .child .contents p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.user-hero .child .contents button{
+    background: rgba(224, 224, 224, 0.726);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
 
 
 /* footer */
