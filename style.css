@@ -278,9 +278,7 @@ footer p span {
 /* for mobile */
 @media only screen and (max-width: 600px) {
     section .hero {
-        
         height: 300px;
-        
       }
   .image-hero .grid {
     grid-template-columns: 1fr 1fr;
